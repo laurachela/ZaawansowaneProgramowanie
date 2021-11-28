@@ -29,7 +29,7 @@ print("\n")
 print("Zad. 3")
 
 def sprawdzenie(liczba: int) -> bool:
-    if (liczba % 2 == 0):
+    if liczba % 2 == 0:
         return True
     else:
         return False
@@ -42,7 +42,7 @@ def sprawdzenie(liczba: int) -> bool:
 zmienna = sprawdzenie(3)
 print(zmienna)
 
-if zmienna==True:
+if zmienna is True:
     print("Liczba parzysta")
 else:
     print("Liczba nieparzysta")
@@ -69,12 +69,12 @@ print("Zad. 5")
 
 def dwaarg(x: list, y: int) -> bool:
     if y in x:
-        print(f"Lista zawiera wartość przekazaną w drugim argumencie, czyli {y}")
+        return True # f"Lista zawiera wartość przekazaną w drugim argumencie, czyli {y}"
     else:
-        print(f"Nie istnieje w liście podana wartość, czyli {y}")
+        return False # f"Nie istnieje w liście podana wartość, czyli {y}"
 
 listaA=[1,2,3,4,5]
-dwaarg(listaA, 5)
+print(dwaarg(listaA, 5))
 
 print("\n")
 # 6. Stworzyć funkcję, która przyjmuje 2 argumenty typu list i zwraca wynik typu list .
