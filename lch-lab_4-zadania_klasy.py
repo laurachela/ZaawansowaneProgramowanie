@@ -12,6 +12,7 @@ class Student:
     def __str__(self):
         return f'Dane studenta:\nImię i nazwisko: {self.name}'
 
+    @property
     def is_passed(self):
         if self.marks > 50:
             return True
@@ -26,10 +27,12 @@ s1 = Student('Adam N', 55)
 s2 = Student('Andrzej N', 45)
 
 s1.powitanie()
-print(s1.is_passed())
+# print(s1.is_passed())
+print(s1.is_passed)
 
 s2.powitanie()
-print(s2.is_passed())
+# print(s2.is_passed())
+print(s2.is_passed)
 
 # 2.
 print("Zad.2")
