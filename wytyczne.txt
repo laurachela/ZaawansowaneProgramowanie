@@ -1,0 +1,8 @@
+1. Modularyzacja, wynieść logikę detekcji do osobnego serwisu, a w main jedynie importować np funkcję "detect", która będzie uruchamiana w pętli
+
+2. W main jedynie logika z glob i iterowanie po zdjęciach znajdujących się w katalogu
+
+3. Wrzucić projekt na github
+
+4. 2 funkcje, które są już w mainie wynieść do osobnego serwisu i jedynie zaimportować gdzie trzeba
+
